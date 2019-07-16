@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jdanhel</groupId>
-    <artifactId>zonky_JSON_reader</artifactId>
+    <artifactId>JSON_reader</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>zonky_JSON_reader</name>

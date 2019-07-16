@@ -1,14 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="zonky_JSON_reader:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/zonky_JSON_reader_jar</output-path>
-    <root id="archive" name="zonky_JSON_reader.jar">
-      <element id="module-output" name="zonky_JSON_reader" />
-      <element id="extracted-dir" path="I:/Stahování/json-20180813.jar" path-in-jar="/" />
+  <artifact type="jar" name="JSON_reader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSON_reader_jar</output-path>
+    <root id="archive" name="JSON_reader.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="JSON_reader" />
       <element id="extracted-dir" path="I:/Stahování/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar" path-in-jar="/" />
       <element id="extracted-dir" path="I:/Stahování/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar" path-in-jar="/" />
       <element id="extracted-dir" path="I:/Stahování/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar" path-in-jar="/" />
       <element id="extracted-dir" path="I:/Stahování/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar" path-in-jar="/" />
       <element id="extracted-dir" path="I:/Stahování/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="I:/Stahování/json-20180813.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
