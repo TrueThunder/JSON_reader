@@ -91,25 +91,30 @@ public class App {
 
                 Object value = loan.get(key);
                 if (value instanceof Double || value instanceof Integer || value instanceof Long) {
-                    System.out.println(levelEdit + key + ": " + value);
+
+                    outputMethod(levelEdit, key, value);
 
 
                 } else if (value instanceof String) {
-                    System.out.println(levelEdit + key + ": " + value);
+
+                    outputMethod(levelEdit, key, value);
                     // writeOutNode(String.valueOf(value));
 
 
                 } else if (value instanceof Boolean) {
-                    System.out.println(levelEdit + key + ": " + value);
+
+                    outputMethod(levelEdit, key, value);
 
                 } else if (value.hashCode() == 0 || value.equals("[]")) {
-                    System.out.println(levelEdit + key + ": " + value);
+
+                    outputMethod(levelEdit, key, value);
                 } else {
 
                     if (loan.getJSONArray(key) instanceof JSONArray && loan.getJSONArray(key).isEmpty()) {
-                        System.out.println("Prázdný");
+                        System.out.println(levelEdit + key + ": //Prázdný//");
                     } else {
-                        System.out.println(levelEdit + key);
+                        outputMethod(levelEdit, key, null);
+
                         String str = loan.get(key).toString();
                         writeOutNode(str, 1);
                     }
@@ -120,6 +125,11 @@ public class App {
         }
     }
 
+    private static void outputMethod(String levelEdit, String key, Object value
+
+    ) {
+        System.out.println(levelEdit + key + ": " + value);
+    }
 
     private static Timestamp getTimeStamp() {
 
